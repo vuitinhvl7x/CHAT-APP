@@ -10,6 +10,7 @@ import {
   User,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import AuthImagePattern from "../components/AuthImagePattern";
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ const SignUpPage = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-medium">Full Name</span>
+                <span className="label-text font-medium ">Full Name</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -139,6 +140,12 @@ const SignUpPage = () => {
           </div>
         </div>
       </div>
+
+      {/* right side */}
+      <AuthImagePattern
+        title="Join our community"
+        subtitle="Connect with friends, share moments and stay in touch with your loved ones"
+      />
     </div>
   );
 };
