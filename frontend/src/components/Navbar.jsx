@@ -22,7 +22,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center space-x-2">
             <Link to="/settings" className="btn btn-sm gap-2 transition-colors">
               <Settings className="size-5" />
               <span className="hidden md:inline">Settings</span>
